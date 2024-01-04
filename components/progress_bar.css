@@ -1,0 +1,18 @@
+.progress {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.progress::after {
+  content: attr(title);
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid rgb(67, 57, 255);
+  color: white;
+}
