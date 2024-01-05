@@ -26,6 +26,10 @@ body {
   color: #fff;
 }
 
+.display-block {
+  display: block !important;
+}
+
 /* ========== Head  */
 
 .seasons_head {
@@ -117,8 +121,11 @@ span.span-line {
 }
 
 /* Ul list ============================ */
-.section-down .dropdown-list {
+.section-down {
   display: none;
+}
+
+.section-down .dropdown-list {
   list-style-type: none;
   padding: 16px;
   background-color: #15203f;
@@ -159,8 +166,4 @@ span.span-line {
   flex-flow: row nowrap;
   border: 2px solid #fff;
   border-radius: 50%;
-}
-
-.display-block {
-  display: block;
 }
