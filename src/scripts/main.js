@@ -4,8 +4,6 @@ const sectionUp = document.querySelectorAll('#section-up');
 let sectionDown = document.querySelectorAll('#section-down');
 let downArrow = document.querySelectorAll('.fa-chevron-down');
 
-console.log(downArrow)
-
 for (let sectionUpChild = 0; sectionUpChild < sectionUp.length; sectionUpChild++) {
   sectionUp[sectionUpChild].addEventListener('click', () => {
     if (sectionDown[sectionUpChild].className === "section-down") {
