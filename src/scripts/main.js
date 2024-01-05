@@ -2,16 +2,18 @@
 
 const sectionUp = document.querySelectorAll('#section-up');
 let sectionDown = document.querySelectorAll('#section-down');
-let downArrow = document.querySelector('.fa-chevron-down');
+let downArrow = document.querySelectorAll('.fa-chevron-down');
+
+console.log(downArrow)
 
 for (let sectionUpChild = 0; sectionUpChild < sectionUp.length; sectionUpChild++) {
   sectionUp[sectionUpChild].addEventListener('click', () => {
     if (sectionDown[sectionUpChild].className === "section-down") {
       sectionDown[sectionUpChild].classList.add('display-block');
-      downArrow.style.rotate = "180deg";
+      downArrow[sectionUpChild].style.rotate = "180deg";
     } else {
       sectionDown[sectionUpChild].classList.remove('display-block');
-      downArrow.style.rotate = "0deg"
+      downArrow[sectionUpChild].style.rotate = "0deg"
     }
   })
 }
