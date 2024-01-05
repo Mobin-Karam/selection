@@ -3,6 +3,9 @@
 const sectionUp = document.querySelectorAll('#section-up');
 let sectionDown = document.querySelectorAll('#section-down');
 let downArrow = document.querySelectorAll('.fa-chevron-down');
+let leftDots = document.querySelectorAll('#left-dot');
+
+console.log(leftDots)
 
 for (let sectionUpChild = 0; sectionUpChild < sectionUp.length; sectionUpChild++) {
   sectionUp[sectionUpChild].addEventListener('click', () => {

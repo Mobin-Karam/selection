@@ -1,4 +1,5 @@
 /* @import "./components/progress_bar.css"; */
+@import "./responsive.css";
 
 * {
   padding: 0px;
@@ -80,6 +81,10 @@ body {
 }
 
 /* section-up Left Side  */
+.section-up .left-dot {
+  display: none;
+}
+
 .section-up .left {
   /* width: 100%; */
   display: flex;
